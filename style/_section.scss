@@ -1,0 +1,64 @@
+.section{
+    position: relative;
+    &:not(:last-child){
+        margin-bottom: 160px;
+    }
+    &-title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: $blue;
+    }
+    &-text{
+        font-family: Lexend Deca;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: $grey;
+        margin: 24px 0 40px;
+    }
+    &-img{
+        width: 445px;
+        height: 445px;
+        img{
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    &-oval{
+        width: 445px;
+        height: 445px;
+        background: #E5ECF4;
+        border-radius: 50%;
+        position: absolute;
+        &_right{
+            right: -344px;
+        }
+        &_left{
+            left: -344px;
+        }
+    }
+    &-arrow{
+        &_first{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+        &_second{
+            position:absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        &_third{
+            position:absolute;
+            top: 85px;
+            right: 0;
+            z-index: 1;
+        }
+    }
+}

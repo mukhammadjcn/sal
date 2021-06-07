@@ -1,0 +1,48 @@
+.apps{
+    padding: 100px 0;
+    background-color: #495567;;
+    position: relative;
+}
+.app-title{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: #fff;
+}
+
+.app-link{
+    display: block;
+    background-color: $grey;
+    padding: 8px 16px;
+    border-radius: 6px;
+    z-index: 2;
+    .row{
+        .col:first-child{
+            svg{
+                vertical-align: middle;
+            }
+        }
+        .col:nth-child(2){
+            flex-basis: 60%;
+            h4{
+                font-weight: bold;
+                font-size: 10px;
+                line-height: 15px;
+                color: $blue;
+            }
+            h3{
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 24px;
+                color: $blue;
+            }
+        }
+    }
+}
+.bottom-circle{
+    svg{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

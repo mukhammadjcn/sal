@@ -1,0 +1,50 @@
+.header{
+    background-color: #fff;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 22px 0;
+    box-shadow: 0 10px 99px rgba(0, 0, 0, 0.2)  ; 
+	-webkit-box-shadow: 0 10px 99px rgba(0, 0, 0, 0.2)  ; 
+	-moz-box-shadow: 0 10px 99px rgba(0, 0, 0, 0.2)  ; 
+}
+.nav{
+    &-list{
+        &__item{
+            &-link{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 25px;
+                color: $grey;
+                &:hover{
+                    color: $yellow;
+                }
+            }
+            &:not(:last-child){
+                margin-right: 32px;
+            }
+        }
+    }
+}
+.footer{
+    background-color: $blue;
+    padding: 35px 0;
+    &-icons{
+        text-align: right;
+        a:not(:last-child){
+            margin-right: 24px;
+            display: inline-block;
+        }
+        a{
+            transition: all 0.35s;
+            &:hover{
+                svg{
+                    path{
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

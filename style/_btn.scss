@@ -1,0 +1,21 @@
+
+.btn{
+    font-family: Space Mono;
+    letter-spacing: 0.3px;
+    width: 180px;
+    background: $yellow;
+    padding: 14px 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    border: 3px solid $yellow;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.35s;
+    &:hover{
+        color: $yellow;
+        background-color: transparent;
+    }
+}
